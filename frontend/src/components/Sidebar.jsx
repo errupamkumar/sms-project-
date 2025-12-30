@@ -58,7 +58,6 @@ const Sidebar = () => {
                 { label: 'Classes', path: '/academics/classes' },
                 { label: 'Sections', path: '/academics/sections' },
                 { label: 'Subjects', path: '/academics/subjects' },
-                { label: 'Subjects', path: '/academics/subjects' },
                 { label: 'Test Types', path: '/academics/test-types' },
                 { label: 'Exam Schedule', path: '/academics/exam-schedule' },
             ],

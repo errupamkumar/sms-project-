@@ -20,6 +20,7 @@ import ChangePassword from './pages/ChangePassword';
 import ExamSchedule from './pages/academics/ExamSchedule';
 import ResultManagement from './pages/examination/ResultManagement';
 import TestTypes from './pages/academics/TestTypes';
+import Subjects from './pages/academics/Subjects';
 import './index.css';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
               <Route path="teachers" element={<TeacherList />} />
               <Route path="teachers/add" element={<AddTeacher />} />
               <Route path="academics/classes" element={<ClassManager />} />
+              <Route path="academics/subjects" element={<Subjects />} />
               <Route path="academics/test-types" element={<TestTypes />} />
               <Route path="academics/exam-schedule" element={<ExamSchedule />} />
               <Route path="examination/add-marks" element={<AddMarks />} />

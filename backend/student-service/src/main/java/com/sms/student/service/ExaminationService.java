@@ -28,6 +28,22 @@ public class ExaminationService {
         return subjectRepository.findAll();
     }
 
+    public SchoolSubject saveSubject(SchoolSubject subject) {
+        return subjectRepository.save(subject);
+    }
+
+    public SchoolSubject updateSubject(Long id, SchoolSubject updatedSubject) {
+        SchoolSubject existing = subjectRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Subject not found"));
+        existing.setSubjectName(updatedSubject.getSubjectName());
+        existing.setSubjectCode(updatedSubject.getSubjectCode());
+        return subjectRepository.save(existing);
+    }
+
+    public void deleteSubject(Long id) {
+        subjectRepository.deleteById(id);
+    }
+
     public List<Examination> getAllExams() {
         return examinationRepository.findAll();
     }

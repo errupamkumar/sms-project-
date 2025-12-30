@@ -1,0 +1,29 @@
+# Java / Maven
+target/
+*.class
+.mvn/
+*.jar
+*.war
+*.ear
+
+# Node / JS
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+coverage/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
